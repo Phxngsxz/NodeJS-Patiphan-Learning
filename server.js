@@ -12,7 +12,7 @@ http.createServer(function (req, res){
     })
 }).listen(8000);
 
-fs.open('mynewfile2.txt', 'w', function(err, file){
+fs.writeFile('mynewfile3.txt', 'This is new file 3', function(err){
     if (err) throw err;
     console.log('Saved!');
 })
