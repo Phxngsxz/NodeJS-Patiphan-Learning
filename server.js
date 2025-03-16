@@ -12,7 +12,7 @@ http.createServer(function (req, res){
     })
 }).listen(8000);
 
-fs.writeFile('mynewfile3.txt', 'This is new file 3', function(err){
+fs.rename('mynewfile2.txt', 'myrenamefile.text' , function(err){
     if (err) throw err;
-    console.log('Saved!');
+    console.log('File Deleted!');
 })
